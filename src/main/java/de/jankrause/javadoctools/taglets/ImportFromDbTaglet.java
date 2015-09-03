@@ -30,7 +30,7 @@ import de.jankrause.javadoctools.utils.CommentTypeUtil;
 import de.jankrause.javadoctools.utils.DbCommentProcessor;
 
 // TODO: Write code documentation and Readme.md
-// TODO: Share in github and implement CI
+// TODO: implement CI on travis ci
 public final class ImportFromDbTaglet implements Taglet {
 
     public static final String NAME = "importFromDb";

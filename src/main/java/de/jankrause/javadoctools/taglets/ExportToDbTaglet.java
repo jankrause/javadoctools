@@ -30,8 +30,6 @@ import de.jankrause.javadoctools.utils.CommentTypeUtil;
 import de.jankrause.javadoctools.utils.DbCommentProcessor;
 import de.jankrause.javadoctools.utils.JavaCommentUtil;
 
-// TODO: Write code documentation and Readme.md
-// TODO: Share in github and implement CI
 public final class ExportToDbTaglet implements Taglet {
 
     private static final String NAME = "exportToDb";
