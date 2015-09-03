@@ -15,20 +15,19 @@
  *******************************************************************************/
 package de.jankrause.javadoctools.taglets;
 
+import java.io.File;
+import java.io.IOException;
+import java.sql.SQLException;
+import java.util.Map;
+
 import com.sun.javadoc.Tag;
 import com.sun.tools.doclets.Taglet;
+
 import de.jankrause.javadoctools.connectors.DbConnector;
 import de.jankrause.javadoctools.connectors.FetchDatabaseComment;
-import de.jankrause.javadoctools.connectors.MysSqlConnector;
 import de.jankrause.javadoctools.domain.CommentType;
 import de.jankrause.javadoctools.utils.CommentTypeUtil;
 import de.jankrause.javadoctools.utils.DbCommentProcessor;
-
-import java.io.*;
-import java.sql.SQLException;
-import java.util.Map;
-import java.util.PropertyResourceBundle;
-import java.util.ResourceBundle;
 
 // TODO: Write code documentation and Readme.md
 // TODO: Share in github and implement CI
