@@ -15,35 +15,20 @@
  *******************************************************************************/
 package de.jankrause.javadoctools.connectors;
 
-import de.jankrause.javadoctools.domain.Column;
-import de.jankrause.javadoctools.domain.CommentType;
-import de.jankrause.javadoctools.domain.Table;
-import de.jankrause.javadoctools.utils.DbCommentProcessor;
-import org.junit.Test;
-import org.mockito.Mockito;
+import static org.junit.Assert.assertEquals;
 
 import java.io.File;
 import java.io.IOException;
 import java.sql.SQLException;
 
-import static org.junit.Assert.assertEquals;
+import org.junit.Test;
+import org.mockito.Mockito;
+
+import de.jankrause.javadoctools.domain.CommentType;
+import de.jankrause.javadoctools.domain.Table;
+import de.jankrause.javadoctools.utils.DbCommentProcessor;
 
 public class FetchDatabaseCommentTest {
-
-    @Test
-    public void shouldNotFetchColumnCommentFromAnnotation()throws IOException, SQLException {
-        DbConnector dbConnector = Mockito.mock(DbConnector.class);
-        Mockito.when(dbConnector.fetchColumnsComment(Mockito.<Column>any())).
-                thenThrow(new RuntimeException("Not yet implemented."));
-
-        DbCommentProcessor fetcher = new DbCommentProcessor(26, new File("src/test/resources/testpackage/AnnotatedEntity.java"), "", CommentType.FIELD);
-        assertEquals("<MISSING COMMENT>",
-                fetcher.applyOnComment(new FetchDatabaseComment().with(dbConnector)).fetch());
-
-        fetcher = new DbCommentProcessor(26, new File("src/test/resources/testpackage/AnnotatedEntity.java"), "", CommentType.NONE);
-        assertEquals("<MISSING COMMENT>",
-                fetcher.applyOnComment(new FetchDatabaseComment().with(dbConnector)).fetch());
-    }
 
     @Test
     public void shouldFindTheTableAnyway()throws IOException, SQLException {
