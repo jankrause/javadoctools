@@ -41,7 +41,7 @@ public class JavaAnnotationParserTest {
         assertEquals(new Column(table, "name"), JavaAnnotationParser.fetchColumnFromColumnAnnotation(
                 new Table("test_comments"), startCommentLine, javaFile).get());
 
-        startCommentLine = 22;
+        startCommentLine = 38;
         assertEquals(new Column(table, "id"), JavaAnnotationParser.fetchColumnFromColumnAnnotation(
                 table, startCommentLine, javaFile).get());
     }
