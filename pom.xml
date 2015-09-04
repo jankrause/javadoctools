@@ -6,12 +6,32 @@
 	<groupId>com.github.jankrause</groupId>
 	<artifactId>javadoctools</artifactId>
 	<version>0.1-SNAPSHOT</version>
+	<name>Javadoc Toolbox</name>
+	<description>A bundle of useful javadoc-extensions to write documentation in line with the principles of pragmatic software development.</description>
+	<url>http://github.com/jankrause/javadoctools</url>
+
+	<licenses>
+		<license>
+			<name>Apache License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
 
 	<scm>
 		<url>https://github.com/jankrause/javadoctools.git</url>
 		<connection>scm:git:git@github.com:jankrause/javadoctools.git</connection>
 		<developerConnection>scm:git:git@github.com:jankrause/javadoctools.git</developerConnection>
 	</scm>
+
+	<developers>
+		<developer>
+			<name>Jan Christian Krause</name>
+			<email>krausedammann@web.de</email>
+			<organization>Private</organization>
+			<organizationUrl>https://www.xing.com/profile/JanChristian_Krause/organizationUrl</organizationUrl>
+		</developer>
+	</developers>
 
 	<dependencies>
 		<dependency>
